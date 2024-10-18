@@ -1,0 +1,88 @@
+.burger-container {
+  position: relative;
+  height: 200vh; /* Make the container tall enough to allow scrolling */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.burger-layer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease-out;
+}
+
+.burger-layer img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Assign specific top values to ensure proper stacking */
+.burger-layer.bun-top {
+  top: 10%; /* Adjust these values according to your design */
+}
+
+.burger-layer.lettuce {
+  top: 20%;
+}
+
+.burger-layer.cheese {
+  top: 30%;
+}
+
+.burger-layer.cutlet {
+  top: 40%;
+}
+
+.burger-layer.bun-bottom {
+  top: 50%;
+}
+
+/* Styling for heading and button */
+.header-container {
+  position: absolute; /* Position it on the left side */
+  top: 40%; /* Center vertically or adjust as necessary */
+  left: 5%; /* Positioning from the left */
+  color: white; /* Text color */
+  z-index: 10; /* Ensure it appears above other layers */
+  transform: translateY(-50%); /* Center it vertically */
+}
+
+.header-container h1 {
+  font-size: 4.5rem; /* Adjust font size */
+  margin: 0; /* Remove default margin */
+}
+
+.shop-now-button {
+  background-color: #ff5733; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Button padding */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Cursor style */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.shop-now-button:hover {
+  background-color: #ff2e00; /* Darken on hover */
+}
+
+.service-container {
+  position: absolute; /* Positioning it absolutely */
+  bottom: 10%; /* Adjust as necessary to position above the bottom */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Adjust to center */
+  color: white; /* Set text color */
+  text-align: center; /* Center the text */
+  z-index: 10; /* Ensure it appears above other layers */
+}
+
+.service-container h2 {
+  margin: 5px 0; /* Add some margin between headings */
+  font-size: 2rem; /* Adjust font size as needed */
+}
+
+.image-slider-container {
+  max-width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+}
